@@ -5,6 +5,7 @@ import Home from '@/pages/index';
 describe('Home', () => {
   it('renders a heading', () => {
     render(<Home />);
+
     const text = screen.getByText('Get started by editing');
     expect(text).toBeInTheDocument();
   });
