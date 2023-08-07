@@ -1,4 +1,4 @@
-name: 'test-coverage'
+name: 'test coverage'
 on:
     pull_request:
         branches:
@@ -10,10 +10,11 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - uses: ArtiomTr/jest-coverage-report-action@v2
-              id: test-coverage
+              id: coverage
               with:
+                  test-script: test-coverage
                   output: report-markdown
             - uses: peter-evans/create-or-update-comment@v3
               with:
                   issue-number: ${{ github.event.pull_request.number }}
-                  body: ${{ steps.test-coverage.outputs.report }}
+                  body: ${{ steps.coverage.outputs.report }}
