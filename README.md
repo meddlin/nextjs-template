@@ -1,8 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Template
 
-## Getting Started
+What you get "out of the box"
 
-First, run the development server:
+- Next.js
+- Tailwind CSS
+- Jest tests
+- Sandworm
+- GitHub Actions
+
+### Tailwind CSS
+
+Opinionated choice, yes. It works great for my needs, makes changing styles quick. And...it's found a place embedded in the "new Next.js" project questions...so that seems a good, Vercel-approved decision.
+
+### Jest
+
+Unit test your code.
+
+### Sandworm
+
+Security and license checks for your dependencies.
+
+### GitHub Actions
+
+Jest, Sandworm (others to come?) are configured to automatically run on pull requests with the preconfigured workflows. 
+
+**Want deployments, too?**&mdash;Create a Vercel account, and install it in your GitHub profile, to add easy deployments to this automation!
+
+## "Getting Started": the same one from Next.js
+
+Below, you can read the same `README` generated after running `npx create-next-app ...`. (Make sure to install dependencies first, that small edit is there.)
+
+### Getting Started
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -21,6 +57,8 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+--- 
 
 ## Learn More
 
