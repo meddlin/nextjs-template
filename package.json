@@ -9,7 +9,7 @@
     "lint": "next lint",
     "test": "jest",
     "test-watch": "jest --watch",
-    "test-coverage": "jest --collectCoverage --"
+    "coverage": "jest --collectCoverage --"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
