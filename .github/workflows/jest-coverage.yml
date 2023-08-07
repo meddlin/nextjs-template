@@ -12,7 +12,7 @@ jobs:
             - uses: ArtiomTr/jest-coverage-report-action@v2
               id: coverage
               with:
-                  test-script: test-coverage
+                  test-script: 'npm run test-coverage'
                   output: report-markdown
             - uses: peter-evans/create-or-update-comment@v3
               with:
