@@ -9,7 +9,8 @@
     "lint": "next lint",
     "test": "jest",
     "test-watch": "jest --watch",
-    "coverage": "jest --collectCoverage --"
+    "coverage": "jest --collectCoverage --",
+    "sca": "npx @sandworm/audit@latest"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
